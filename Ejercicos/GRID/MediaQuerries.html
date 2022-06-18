@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+    <header>
+        <h1> LOGO </h1>
+    </header>
+    <div class="contenedor">
+        <div class="primero">Nav</div>
+        <div class="segundo">Red</div>
+        <div class="tercero">Adobe</div>
+    </div>
+    </body>
+</body>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: aqua;
+
+    }
+
+    .contenedor {
+        padding: 5px;
+        width: 100%;
+        height: 85%;
+        display: grid;
+        grid-template-columns: 30% 50% 20%;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+        "primero segundo tercero"
+    }
+
+    .contenedor .primero {
+        grid-area: primero;
+        background-color: green;
+        border-color: green;
+    }
+    
+    .contenedor .segundo {
+        grid-area: segundo;
+        background-color: red;
+        border-color: red;
+    }
+    
+    .contenedor .tercero {
+        grid-area: tercero;
+        background-color: yellow;
+        border-color: yellow;
+    }
+
+    
+@media (max-width:900px) {
+  
+    body {
+        width: 900px;
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: aqua;
+    }
+
+    .contenedor {
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 30% 70%;
+        grid-gap: 10px;
+        grid-template-areas:
+        "primero primero"
+        " segundo tercero"
+    }
+
+    .contenedor .primero {
+        grid-area: primero;
+        background-color: green;
+        border-color: green;
+    }
+
+    .contenedor .segundo {
+        grid-area: segundo;
+        background-color: red;
+        border-color: red;
+    }
+    
+    .contenedor .tercero {
+        grid-area: tercero;
+        background-color: yellow;
+        border-color: yellow;
+        }
+    }
+
+    @media (max-width:600px) {
+  
+    body {
+        width: 600px;
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: aqua;
+    }
+
+    .contenedor {
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 150px 400px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "primero"
+        "segundo"
+        "tercero"
+     }
+
+    .contenedor .primero {
+        grid-area: primero;
+        background-color: green;
+        border-color: green;
+    }
+
+.contenedor .segundo {
+        grid-area: segundo;
+        background-color: red;
+        border-color: red;
+    }
+    
+    .contenedor .tercero {
+        grid-area: tercero;
+        background-color: yellow;
+        border-color: yellow;
+    }
+    }
+
+</style>
+</html>

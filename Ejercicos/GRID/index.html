@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="contenedor">
+    <div class="class_a">A</div>
+    <div class="class_b">B</div>
+    <div class="class_c">C</div>
+    <div class="class_d">D</div>
+    <div class="class_e">E</div>
+    <div class="class_f">F</div>
+</div>    
+
+</body>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor {
+        width: 1000px;
+        height: 1000px;
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px 10px;
+        grid-template-areas: 
+            "class_a class_b class_d"
+            "class_e class_c class_c"
+            "class_f class_c class_c"
+        }
+    
+   .class_a {
+        grid-area: class_a;
+        background-color: green;
+        border-color: green;
+        text-align: center;
+        align-items: center;
+        }
+    .class_b {
+        grid-area: class_b;
+        background-color: goldenrod;
+        border-color: goldenrod;
+    }
+
+    .class_d {
+        grid-area: class_d;
+        background-color: violet;
+        border-color: violet;
+    }
+
+    .class_e {
+        grid-area: class_e;
+        background-color: brown;
+        border-color: brown;
+    }
+
+    .class_f {
+        grid-area: class_f;
+        background-color: blue;
+        border-color: blue;
+    }
+
+    .class_c {
+        grid-area: class_c;
+        background-color: aquamarine;
+        border-color: aquamarine;
+    }
+</style>
+</html>

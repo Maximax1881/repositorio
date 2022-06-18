@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="contenedor">
+        <div class="lateralizq info">
+            <div class ="card1"><img src="" alt=""></div>
+            <div class="minicontenedor"><h3 class="Titulo">Hola</h2><p class="Texto">Texto</p></div>
+            <h2 class ="Medio">I receveid a job offer mid-course and the subject I learned were current, if it not more so, in the company I joined. I honestly feel I got every penny's worth.  </h2>
+            <p class="Des">Me gusta mucho el chocho de verdad</p>
+        </div>
+         
+        <div class="med1"> </div>
+       
+        <div class="lateralder"></div>
+       
+        <div class="lateralizqa"></div>
+       
+        <div class="med2"></div>
+
+    </div>
+
+</body>
+
+<style>
+    * {
+       padding: 0px; 
+       margin: 0px;
+       border-style: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor {
+        position: flex;
+        width: 80%;
+        height: 100vh;
+        margin: 20px;
+        background-color: rgb(168, 168, 231);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "izq1 izq1 med1 der1"
+        "izq2 med2 med2 der1";
+        gap: 5px;
+    }
+
+    .lateralizq {
+        margin: 20px;
+        background-color: violet;
+        border-radius: 10px;
+        padding: 5px;
+        grid-area: izq1;
+        display: grid;     
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "Imagen Inicio"
+        "Bio Bio"
+        "Des Des";
+    }
+
+    .med1 {
+        margin: 20px;
+        background:grey;
+        border-radius: 10px;
+        grid-area: med1;
+    }
+
+    .lateralder {
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        grid-area: der1;
+    }
+
+    .med2 {
+        margin: 20px;
+        background-color: black;
+        border-radius: 10px;
+        grid-area: med2;
+    }
+
+    .lateralizqa {
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        grid-area: izq2;
+    }
+
+    .card1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        grid-area: Imagen;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;    
+    }
+
+
+    .lateralizq .minicontenedor {
+        grid-area: Inicio;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    h1 {
+        grid-area: Bio;
+        text-align: center;
+    }
+
+    .Titulo {
+        font-size: small;
+    }
+    .Medio {
+        grid-area: Bio;
+        text-align: fill;
+        font-size: large;
+    }
+    .Des {
+        grid-area: Des;
+    }
+    
+
+</style>
+</html>

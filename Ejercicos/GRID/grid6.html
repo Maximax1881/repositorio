@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">Header</div>
+        <div class="lsb">Left Sidebar</div>
+        <div class="mc"> Main content</div>
+        <div class="rsb">Right sidebar</div>
+        <div class="footer">
+            <div class="foot">Footer 1</div>
+            <div class="foot">Footer 2</div>
+            <div class="foot">Footer 3</div>
+            <div class="foot">Footer 4</div>
+        </div>
+    </div>    
+  </body>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 200px 600px 200px;
+        grid-template-rows: 150px 600px 150px;
+        grid-template-areas: 
+            "header header header "
+            "lsb mc  rsb"
+            "footer footer footer"
+        }
+    
+        .header {
+        grid-area: header;
+        background-color: blue;
+        border-color: blue;
+    }
+
+    .lsb {
+        grid-area: lsb;
+        background-color: red;
+        border-color: red;
+    }
+
+    .mc {
+        grid-area: mc;
+        background-color: green;
+        border-color: green;
+    }
+
+    .rsb {
+        grid-area: rsb;
+        background-color: yellow;
+        border-color: yellow;
+    }
+  
+   .footer {
+       display: flex;
+       justify-content: space-between;
+       align-content: center;
+       flex-direction: row;
+   }
+
+</style>
+
+</html>

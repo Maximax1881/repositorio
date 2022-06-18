@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+       <h1>Media Query Demo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ipsum quae veritatis
+             in nihil laudantium labore beatae nulla laborum rem. Error, molestiae eaque quod placeat at.
+              Labore architecto minus accusantium.</p>
+        <h2>Box Columns</h2>
+    </div>
+    
+  <main>
+        <div class="listatarjetas">
+            <img src="gato1.jfif"alt="Place Kittens Are grid-template-areas">></img>
+            <img src="gato2.jfif"alt="Place Kittens Are grid-template-areas">></img>
+            <img src="gato3.jfif"alt="Place Kittens Are grid-template-areas">></img>
+            <img src="gato4.jfif"alt="Place Kittens Are grid-template-areas">></img>
+            <img src="gato5.jfif" alt="Place Kittens Are grid-template-areas"></div>
+        </div>
+ </main>
+
+</body>
+<style>
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr;
+        grid-area: 
+        "head"
+        "main";
+    }
+
+    .header {
+        grid-area: head;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+    }
+</style>
+</html>
